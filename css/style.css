@@ -304,3 +304,28 @@ footer {
     font-size: 0.9rem;
     color: #777;
 }
+
+#form-feedback {
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 15px;
+    border-radius: 5px;
+    display: none; /* Oculto por padrão */
+    margin-top: 20px;
+    text-align: center;
+}
+
+#form-feedback.success {
+    background-color: #d1e7dd;
+    color: #0f5132;
+    border: 1px solid #badbcc;
+    display: block;
+}
+
+#form-feedback.error {
+    background-color: #f8d7da;
+    color: #842029;
+    border: 1px solid #f5c2c7;
+    display: block;
+}
+

@@ -158,6 +158,8 @@
                                 <button type="submit" class="btn btn-primary-custom">Enviar Mensagem</button>
                             </div>
                         </form>
+                        <div id="form-feedback" class="mt-4"></div>
+
                         <div class="text-center mt-5 social-icons">
                             <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
                             <a href="#" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
