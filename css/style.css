@@ -1,0 +1,306 @@
+/*--------------------------------------------------------------
+# Regras Globais
+--------------------------------------------------------------*/
+:root {
+    --background-color: #0e0e0e;
+    --accent-color: #005A9C;
+    --text-color: #FFFFFF;
+    --font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
+    font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--accent-color);
+    font-family: var(--font-family);
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-weight: 500;
+}
+
+section {
+    padding: 80px 0;
+    overflow: hidden; /* Garante que animações não causem scroll horizontal */
+}
+
+.section-padding {
+    padding: 100px 0;
+}
+
+.btn-primary-custom {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    color: var(--text-color);
+    padding: 12px 24px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-primary-custom:hover {
+    background-color: #004a80;
+    border-color: #004a80;
+    transform: translateY(-3px);
+}
+
+.btn-secondary-custom {
+    border: 2px solid var(--accent-color);
+    color: var(--text-color);
+    padding: 10px 24px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary-custom:hover {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    transform: translateY(-3px);
+}
+
+/*--------------------------------------------------------------
+# Navbar
+--------------------------------------------------------------*/
+.navbar {
+    transition: background-color 0.4s ease-in-out, padding 0.4s ease-in-out, border-bottom 0.4s ease-in-out;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    color: var(--text-color);
+    transition: color 0.3s ease; /* Adiciona transição suave */
+}
+
+/* NOVO: Regra para o hover da marca */
+.navbar-brand:hover {
+    color: var(--accent-color);
+}
+
+.navbar.scrolled {
+    background-color: var(--background-color);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    /* NOVO: Faixa para dividir o header do conteúdo */
+    border-bottom: 4px solid var(--accent-color);
+}
+
+.nav-link {
+    color: var(--text-color) !important;
+    font-weight: 500;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--accent-color) !important;
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+
+/*--------------------------------------------------------------
+# Seção Início
+--------------------------------------------------------------*/
+#inicio {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+#inicio h1 {
+     color: var(--text-color);
+}
+
+#inicio .profession {
+    color: var(--accent-color);
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+#inicio .profile-img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 50%;
+    border: 5px solid var(--accent-color);
+    box-shadow: 0 0 30px rgba(0, 90, 156, 0.5);
+}
+
+/*--------------------------------------------------------------
+# Seção Sobre
+--------------------------------------------------------------*/
+#sobre p {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+/*--------------------------------------------------------------
+# Seção Habilidades
+--------------------------------------------------------------*/
+.skill-card {
+    background-color: #1a1a1a;
+    padding: 40px 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    border-color: var(--accent-color);
+}
+
+.skill-card i {
+    font-size: 4rem;
+    color: var(--accent-color);
+    margin-bottom: 20px;
+}
+
+.skill-card h3 {
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+/*--------------------------------------------------------------
+# Seção Projetos
+--------------------------------------------------------------*/
+.project-card {
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border: 1px solid #2a2a2a;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}
+
+.project-card img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+
+.project-card-body {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Faz o corpo do card crescer */
+}
+
+.project-card-body h3 {
+     color: var(--text-color);
+}
+
+.project-tech {
+    font-size: 0.9rem;
+    color: #ccc;
+    margin-bottom: 15px;
+    flex-grow: 1; /* Empurra o botão para baixo */
+}
+
+/* ALTERADO: Estilo do link do projeto para parecer um botão */
+.project-link {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-block;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.project-link i {
+    margin-right: 5px;
+}
+
+.project-link:hover {
+    background-color: #004a80;
+    color: var(--text-color);
+    text-decoration: none;
+    transform: translateY(-2px);
+}
+
+/*--------------------------------------------------------------
+# Seção Contato
+--------------------------------------------------------------*/
+#contato .form-control {
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    color: var(--text-color);
+    padding: 12px;
+}
+
+#contato .form-control:focus {
+    background-color: #1a1a1a;
+    color: var(--text-color);
+    box-shadow: 0 0 0 0.25rem rgba(0, 90, 156, 0.5);
+    border-color: var(--accent-color);
+}
+
+#contato .form-control::placeholder {
+    color: #888;
+}
+
+.form-error {
+    color: #ff4d4d;
+    font-size: 0.875em;
+    display: none; /* Oculto por padrão */
+    margin-top: 5px;
+}
+
+.social-icons a {
+    color: var(--text-color);
+    font-size: 2rem;
+    margin: 0 15px;
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: var(--accent-color);
+    transform: scale(1.2);
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+footer {
+    background-color: #0a0a0a;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #777;
+}
