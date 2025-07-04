@@ -1,7 +1,7 @@
     <!-- ======= Footer ======= -->
     <footer class="footer">
         <div class="container">
-            &copy; Copyright <strong><span>João Vitor</span></strong>. Todos os direitos reservados
+            &copy; Copyright <strong><span>Seu Nome</span></strong>. Todos os direitos reservados
         </div>
     </footer>
 
@@ -64,6 +64,25 @@
                 const formFeedback = document.getElementById('form-feedback');
                 const submitButton = contactForm.querySelector('button[type="submit"]');
 
+                // Função para validar um campo individualmente
+                const validateField = (field) => {
+                    let isValid = field.value.trim() !== '';
+                    
+                    if (!isValid) return false;
+
+                    switch (field.id) {
+                        case 'email':
+                            isValid = emailRegex.test(field.value.trim());
+                            break;
+                        case 'telefone':
+                            // ALTERAÇÃO: Remove caracteres não numéricos e verifica o comprimento
+                            const phoneDigits = field.value.replace(/\D/g, '');
+                            isValid = phoneDigits.length >= 10;
+                            break;
+                    }
+                    return isValid;
+                };
+
                 const toggleError = (field, showError) => {
                     const errorDiv = errorDivs[field.id];
                     if (showError) {
@@ -75,34 +94,28 @@
                     }
                 };
 
+                // Validação ao perder o foco (blur)
                 Object.values(fields).forEach(field => {
                     field.addEventListener('blur', () => {
-                        let isValid = field.value.trim() !== '';
-                        if (field.id === 'email' && isValid) {
-                            isValid = emailRegex.test(field.value.trim());
-                        }
+                        const isValid = validateField(field);
                         toggleError(field, !isValid);
                     });
                 });
 
+                // Validação no envio do formulário
                 contactForm.addEventListener('submit', function(event) {
                     event.preventDefault();
 
                     let isFormValid = true;
                     formFeedback.style.display = 'none';
 
+                    // Valida todos os campos antes de enviar
                     Object.values(fields).forEach(field => {
-                        let isFieldValid = field.value.trim() !== '';
-                        if (field.id === 'email' && isFieldValid) {
-                            isFieldValid = emailRegex.test(field.value.trim());
-                        }
-
+                        const isFieldValid = validateField(field);
                         if (!isFieldValid) {
                             isFormValid = false;
-                            toggleError(field, true);
-                        } else {
-                            toggleError(field, false);
                         }
+                        toggleError(field, !isFieldValid);
                     });
 
                     if (!isFormValid) {
@@ -119,7 +132,7 @@
                         method: 'POST',
                         body: formData
                     })
-                    .then(response => response.text().then(text => ({ ok: response.ok, text })))
+                    .then(response => response.text().then(text => ({ ok: response.ok, status: response.status, text })))
                     .then(result => {
                         formFeedback.className = result.ok ? 'success' : 'error';
                         formFeedback.textContent = result.text;
