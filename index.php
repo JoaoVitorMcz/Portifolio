@@ -161,9 +161,9 @@
                         <div id="form-feedback" class="mt-4"></div>
 
                         <div class="text-center mt-5 social-icons">
-                            <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                            <a href="#" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                            <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/jo%C3%A3o-vitor-menezes-cortez-571363358/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/JoaoVitorMcz" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://www.instagram.com/joaov.mcz/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
