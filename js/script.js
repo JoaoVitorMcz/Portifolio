@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
 
-    // Inicializa a biblioteca Animate On Scroll (AOS)
+    
     AOS.init({
-        duration: 800, // Duração da animação em milissegundos
-        once: true,    // Animação acontece apenas uma vez
-        offset: 50,    // Deslocamento para disparar a animação
+        duration: 800,
+        once: true, 
+        offset: 50,    
     });
 
     // --- Navegação e Menu Ativo ---
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Chama a função uma vez no carregamento da página
     changeActiveLink();
 
-    // --- Menu Mobile ---
+    
     const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
     const mainNavUl = document.querySelector('#main-nav ul');
 
@@ -47,7 +47,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // --- Processamento do Formulário de Contato com AJAX ---
     const contactForm = document.getElementById('contact-form');
     const formFeedback = document.getElementById('form-feedback');
 
@@ -97,14 +96,14 @@ document.addEventListener('DOMContentLoaded', function() {
 // Este evento garante que o script só será executado após o carregamento completo do DOM.
 document.addEventListener('DOMContentLoaded', function() {
     
-    // 1. Inicializa a biblioteca AOS (Animate on Scroll)
+    
     AOS.init({
         duration: 1000, // Duração da animação em milissegundos
         once: true,     // Animação acontece apenas uma vez
         offset: 50,     // Deslocamento (em px) para disparar a animação
     });
 
-    // 2. Adiciona/Remove a classe 'scrolled' na navbar ao rolar a página
+    
     const navbar = document.getElementById('navbar-portfolio');
     if (navbar) {
         // Adiciona um listener para o evento de scroll da janela
@@ -119,14 +118,14 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // 3. Aplica a máscara no campo de telefone usando Vanilla-Masker
+   
     const telefoneInput = document.getElementById('telefone');
     if (telefoneInput) {
         // A máscara se adapta para telefones fixos e celulares com 9º dígito
         VMasker(telefoneInput).maskPattern('(99) 99999-9999');
     }
 
-    // 4. Validação e ENVIO AJAX do formulário de contato
+    
     const contactForm = document.getElementById('contact-form');
     if (contactForm) {
         // Mapeia os campos do formulário e seus respectivos divs de erro

@@ -29,10 +29,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit; // Interrompe a execução do script
     }
 
-    /*
-    / ATENÇÃO: A lógica de envio de e-mail está desativada.
-    / O script agora sempre retornará uma mensagem de sucesso se a validação passar.
-    */
 
     // Se a validação passar, retorna uma mensagem de sucesso para o JavaScript
     http_response_code(200); // Código de sucesso "OK"
