@@ -21,6 +21,8 @@
 
     <!-- Estilos Customizados -->
     <link rel="stylesheet" href="css/style.css">
+
+    <link rel="icon" href="img/Logo_J_-_JB_Santos-removebg-preview.png" type="image/png">
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navbar-portfolio" data-bs-offset="80">
