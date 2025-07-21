@@ -14,11 +14,11 @@
                         <a href="#contato" class="btn btn-secondary-custom">Entrar em Contato</a>
                     </div>
                 </div>
-                 <!-- <div class="col-lg-6 text-center">
-                    <img src="https://placehold.co/400x400/0e0e0e/005A9C?text=Sua+Foto"
+                  <div class="col-lg-6 text-center">
+                    <img src="img/7a97c30f-a54e-4ea0-8d09-e99f870320cf.jpg"
                         alt="Foto de perfil"
                         class="img-fluid profile-img"
-                        data-aos="fade-left"> -->
+                        data-aos="fade-left"> 
                 </div>
             </div>
         </div>
@@ -29,7 +29,7 @@
             <div data-aos="fade-up">
                 <h2 class="section-title">Sobre Mim</h2>
                 <p>
-                    Meu nome é João Vitor. Tenho 18 anos e estou cursando TADS. Gosto muito de tecnologia. Estou sempre em busca de aprender novas habilidades e aprimorar meus conhecimentos na área de programação.
+                Meu nome é João Vitor, tenho 18 anos e atualmente sou estudante de Análise e Desenvolvimento de Sistemas. Gosto muito de tecnologia e estou sempre em busca de novos conhecimentos e desafios que me permitam evoluir como desenvolvedor. Tenho especial interesse pela área de programação e estou constantemente me dedicando a aprimorar minhas habilidades técnicas e criativas para entregar soluções eficientes e inovadoras.
                 </p>
             </div>
         </div>
