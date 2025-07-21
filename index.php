@@ -103,7 +103,9 @@
                         <img src="img/SpeedScarf.png" alt="Imagem do Projeto 1">
                         <div class="project-card-body">
                             <h3>Speed Scarf</h3>
-                            <p class="project-tech">Tecnologias: HTML, CSS, JavaScript</p>
+                            <p class="project-tech">
+                            Site feito para apresentar um jogo feito na faculdade <br>
+                            Tecnologias: HTML, CSS, JavaScript e Git</p>
                             <a href="https://joaovitormcz.github.io/Projeto-TechAcademy/" target="_blank" class="project-link">
                                 <i class="fas fa-external-link-alt"></i> Ver Site
                             </a>
@@ -116,7 +118,9 @@
                         <img src="img/CarinaMelo.png" alt="Imagem do Projeto 2">
                         <div class="project-card-body">
                             <h3>Carina Melo SemiJoias</h3>
-                            <p class="project-tech">Tecnologias: PHP, CSS, JavaScript, Bootstrap</p>
+                            <p class="project-tech">
+                            Site feito para apresentar catálogo de Semijóias <br>    
+                            Tecnologias: PHP, CSS, JavaScript, Bootstrap e Git</p>
                             <a href="https://carina-melo.infinityfreeapp.com/home" target="_blank" class="project-link">
                                 <i class="fas fa-external-link-alt"></i> Ver Site
                             </a>
@@ -159,11 +163,6 @@
                         </form>
                         <div id="form-feedback" class="mt-4"></div>
 
-                        <div class="text-center mt-5 social-icons">
-                            <a href="https://www.linkedin.com/in/jo%C3%A3o-vitor-menezes-cortez-571363358/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                            <a href="https://github.com/JoaoVitorMcz" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                            <a href="https://www.instagram.com/joaov.mcz/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        </div>
                     </div>
                 </div>
             </div>
