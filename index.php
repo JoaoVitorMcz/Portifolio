@@ -30,7 +30,7 @@
             <div data-aos="fade-up">
                 <h2 class="section-title">Sobre Mim</h2>
                 <p>
-                    Insira aqui um parágrafo cativante sobre você. Fale sobre sua paixão por tecnologia, sua jornada profissional, seus objetivos e o que te motiva. Destaque suas principais qualidades como profissional e como pessoa. Mantenha o texto conciso, mas informativo.
+                    Meu nome é João Vitor. Tenho 18 anos e estou cursando TADS. Gosto muito de tecnologia e de jogos. Estou sempre em busca de aprender novas habilidades e aprimorar meus conhecimentos na área de programação.
                 </p>
             </div>
         </div>
